@@ -7,13 +7,13 @@ import java.util.Scanner;
 
  class Data {
 	
-	private File inputText;
-	private File outputText;
+    private File inputText;
+    private File outputText;
     private PrintWriter output;
-	private int count;
-	private String label;
-	private String mneumonic;
-	private String operand;    
+    private int count;
+    private String label;
+    private String mneumonic;
+    private String operand;    
     private String address;
     
     private String format2 = "MULR" + "TIXR" + "SVC" + "SHIFTR" + "SUBR" + "DIVR" + "CLEAR"     //string for format 2 
@@ -46,7 +46,7 @@ import java.util.Scanner;
 		
 		Scanner input = new Scanner(inputText);
 		
-		if(inputText.canRead() == false){       //checking to see if the file can be read or not
+		if(inputText.canRead() == false){                  //checking to see if the file can be read or not
 			System.out.println("Can't read file");
 			System.exit(0);
 		}
